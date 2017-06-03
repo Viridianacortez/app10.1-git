@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Decima Aplicacion</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+
+<body onLoad="MM_preloadImages('imagenes/villa_iluminada1.jpg','imagenes/atlixcayotl.jpg','imagenes/cerro1.jpg','imagenes/el_carmen.jpg','imagenes/hospital2.jpg','imagenes/iglesia.jpg','imagenes/Calle_flores.jpg')"><div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TURISMO EN ATLIXCO</h1>
+</div>
+<div>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/atlixco1.jpg" alt="Atlixco1" title="Atlixco1" id="wows1_0"/></li>
+		<li><img src="data1/images/convento_sf.jpg" alt="convento_SF" title="convento_SF" id="wows1_1"/></li>
+		<li><img src="data1/images/escaleras_anchas.jpg" alt="Escaleras_anchas" title="Escaleras_anchas" id="wows1_2"/></li>
+		<li><img src="data1/images/viveros.jpg" alt="viveros" title="viveros" id="wows1_3"/></li>
+		<li><img src="data1/images/tapete_atlixco.jpg" alt="Tapete_atlixco" title="Tapete_atlixco" id="wows1_4"/></li>
+		<li><img src="data1/images/kiosco.jpg" alt="kiosco" title="kiosco" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/hospital.jpg" alt="http://wowslider.com/" title="hospital" id="wows1_6"/></a></li>
+		<li><img src="data1/images/ex_convento1.jpg" alt="Ex_convento1" title="Ex_convento1" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Atlixco1"><span><img src="data1/tooltips/atlixco1.jpg" alt="Atlixco1"/>1</span></a>
+		<a href="#" title="convento_SF"><span><img src="data1/tooltips/convento_sf.jpg" alt="convento_SF"/>2</span></a>
+		<a href="#" title="Escaleras_anchas"><span><img src="data1/tooltips/escaleras_anchas.jpg" alt="Escaleras_anchas"/>3</span></a>
+		<a href="#" title="viveros"><span><img src="data1/tooltips/viveros.jpg" alt="viveros"/>4</span></a>
+		<a href="#" title="Tapete_atlixco"><span><img src="data1/tooltips/tapete_atlixco.jpg" alt="Tapete_atlixco"/>5</span></a>
+		<a href="#" title="kiosco"><span><img src="data1/tooltips/kiosco.jpg" alt="kiosco"/>6</span></a>
+		<a href="#" title="hospital"><span><img src="data1/tooltips/hospital.jpg" alt="hospital"/>7</span></a>
+		<a href="#" title="Ex_convento1"><span><img src="data1/tooltips/ex_convento1.jpg" alt="Ex_convento1"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>VILLA ILUMINADA:</h1>
+<div>
+<p>Consiste en llenar de luces el centro del municipio para celebrar las tradiciones navideñas que se viven en México.</p>
+<p>En este Pueblo Mágico se monta cada año la Villa Iluminada, un recorrido de aproximadamente 2 km con 1,800 luces, adornos, juegos mecánicos y puestos de comida típica que se pueden recorrer únicamente caminando desde el zócalo hasta el Parque Revolución, mientras suenan villancicos navideños.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('villa','','imagenes/villa_iluminada1.jpg',1)"><img src="imagenes/villa_iluminada.jpg" width="382" height="292" id="villa"></a></p>
+
+
+
+</div>
+<div>
+  </div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>HUEY ATLIXCÁYOTL:</h1>
+<div>
+<p>Es el nombre de un festival cultural que se realiza en el cerro de San Miguel, en la parte conocida como Netotiloyan(Cerro de la danza), en el municipio, el último domingo de septiembre de cada año. El nombre de este festejo que se celebra en torno a la fiesta de San Miguel Arcángel es de origen náhuatl y quiere decir Gran Fiesta de Atlixco.</p>
+<p>Las principales danzas que se presentan y que cautivarán tus sentidos son los negritos, los santiagos, toreadores, quetzales, voladores y las pastoras. También hay muestras gastrónomoicas y artesanales que no te puedes perder</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('huey_a','','imagenes/atlixcayotl.jpg',1)"><img src="imagenes/atlixcayotl2.jpg" width="413" height="323" id="huey_a"></a>. </p>
+
+<div>
+  
+</div>
+</div>
+</div>
+ <div data-role="main" class="ui-content" align="center">
+ <div style="width:80%;">
+ <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child ui-last-child">
+  <a href="http://www.xtremo.mx/" target="_self" data-role="button">
+ <h2>XTREMO PARQUE</h2>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="https://www.zonaturistica.com/atractivo-turistico/1160/exconvento-del-carmen-atlixco.html" target="_self" data-role="button">
+ <h2>MUSEO VIDA ANIMAL</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="http://turismoenpuebla.com/portal/art9_Balneario_Axocopan.html" target="_self"  data-role="button">
+ <h2>BALNEARIO AXOCOPAN</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+<a href="http://callego.com.mx/avenida-hidalgo-atlixco-pue/" target="_self" data-role="button">
+ <h2>AVENIDA HIDALGO</h2>
+ </a>
+  <li class="ui-first-child ui-last-child">
+  <a href="http://intoleranciadiario.com/detalle_noticia/142456/municipios/inauguran-en-atlixco-tapete-floral-monumental-2016" target="_self" data-role="button">
+ <h2>TAPETE ATLIXCO</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="http://centrosvacacionales.imss.gob.mx/Paginas/pagina_metepec_informacion.html" target="_self"  data-role="button">
+ <h2>METEPEC</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="http://atlixco.gob.mx/gastronomia" target="_self" data-role="button">
+ <h2>GASTRONOMÍA</h2>
+ </a>
+ </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="http://intoleranciadiario.com/detalle_noticia/139238/municipios/inauguran-feria-de-la-nochebuena-en-atlixco" target="_self" data-role="button">
+ <h2>FERIA NOCHE BUENA</h2>
+ </a>
+ </li>
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ 
+
+
+
+
+
+
+
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+ <h2>ATLIXCO</h2>
+ <p>Breve Historia Atlixco</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CERRO DE SAN MIGUEL</h2>
+<p>¿Qué representa para Atlixco?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CENTRO CULTURAL EL CARMEN</h2>
+<p>Contenido Prehispanico</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>HOSPITAL MUNCIPAL SAN JUAN DE DIOS</h2>
+<p>Epoca de la colonia</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>TEMPLO DE LA MERCED</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>EX CONVENTO SAN FRANCISCO</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CALLE DE LAS FLORES</h2>
+ <p>¿Qué es la conocida calle de las flores?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>IGLESIA DE SAN FELIX PAPA</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>DATOS DEL DISEÑADOR</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+ <img src="imagenes/logo.png" width="46" height="46">
+</div>
+<div>
+<h4>Atlixco De Las Flores</h4>
+<h4>Viridiana Cortez Diaz</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>ALIXCO DE LAS FLORES:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/atlixco2.jpg" alt="Atlixco2" title="Atlixco2" id="wows2_0"/></li>
+		<li><img src="data2/images/balneario.jpg" alt="balneario" title="balneario" id="wows2_1"/></li>
+		<li><img src="data2/images/el_carmen.jpg" alt="el_carmen" title="el_carmen" id="wows2_2"/></li>
+		<li><img src="data2/images/hospital2.jpg" alt="hospital2" title="hospital2" id="wows2_3"/></li>
+		<li><img src="data2/images/jardin.jpg" alt="jardin" title="jardin" id="wows2_4"/></li>
+		<li><img src="data2/images/logo_a.png" alt="logo_A" title="logo_A" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data2/images/villa_.jpg" alt="css slider" title="villa_" id="wows2_6"/></a></li>
+		<li><img src="data2/images/zocalo_atlixco.jpg" alt="zocalo_atlixco" title="zocalo_atlixco" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Atlixco2"><span><img src="data2/tooltips/atlixco2.jpg" alt="Atlixco2"/>1</span></a>
+		<a href="#" title="balneario"><span><img src="data2/tooltips/balneario.jpg" alt="balneario"/>2</span></a>
+		<a href="#" title="el_carmen"><span><img src="data2/tooltips/el_carmen.jpg" alt="el_carmen"/>3</span></a>
+		<a href="#" title="hospital2"><span><img src="data2/tooltips/hospital2.jpg" alt="hospital2"/>4</span></a>
+		<a href="#" title="jardin"><span><img src="data2/tooltips/jardin.jpg" alt="jardin"/>5</span></a>
+		<a href="#" title="logo_A"><span><img src="data2/tooltips/logo_a.png" alt="logo_A"/>6</span></a>
+		<a href="#" title="villa_"><span><img src="data2/tooltips/villa_.jpg" alt="villa_"/>7</span></a>
+		<a href="#" title="zocalo_atlixco"><span><img src="data2/tooltips/zocalo_atlixco.jpg" alt="zocalo_atlixco"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+
+
+
+
+<h2>Heroica Atlixco también conocido como Atlixco de las flores es un municipio que se localiza al suroeste de la Ciudad de Puebla. Recibió su título de Heroica debido a la Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de mayo de 1862.
+  </p>
+</h2>
+<p>Es conocido por su buen clima y la gran actividad florística, comercial y turística que le valieron haber sido llamada Atlixco de las Flores</p>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CERRO DE SAN MIGUEL</h1>
+</div>
+ <div data-role="content" align="center">
+<div>
+<h2>También conocido como Popocatica (cerro que humea) o Macuilxochitpec (cerro de las cinco flores), es el lugar en donde se realiza la fiesta máxima de Atlixco que se lleva a cabo el último domingo de septiembre y para la que se reúnen los representantes de las once regiones culturales de Puebla. Pero aunque tu visita no coincida con la fecha, el lugar te ofrece una maravillosa vista panorámica y siempre puedes visitar la Capilla de San Miguel.</h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>CERRO SAN MIGUEL ATLIXCO</h1>
+<div>
+</div>
+<div>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('CERRO','','imagenes/cerro1.jpg',1)"><img src="imagenes/cerro.jpg" width="336" height="232" id="CERRO"></a> </div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>CENTRO CULTURAL EL CARMEN:</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>¿Qué es el centro cultural el Carmen?</h2>
+  <p></p>
+   <p>La Iglesia y el Convento del Carmen fue fundada en Atlixco por la orden de los Carmelitas y data de 1600 a 1620. En su interior cuenta con un claustro pequeño, uno o dos claustros grandes, huerta, dependencias e iglesia anexa a todo el convento, al igual que todas las construcciones de la orden.</p>
+   <p>A lo largo de su historia ha sido sido utilizado como sede del Gobierno Municipal, Palacio de Justicia e incluso como Cuartel de tropas federales durante la Revolución mexicana. En la actualidad es sede del Centro Cultural del Carmen.</p>
+   <p></p>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('el_carmen','','imagenes/el_carmen.jpg',1)"><img src="imagenes/el_carme1.jpg" width="412" height="330" id="el_carmen"></a> </div>
+</div>
+ <div data-role="footer" data-theme="a" data-position="fixed"> <h4>Guía Turística VCD</h4>
+</div>
+</div>
+   
+   
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>HOSPITAL MUNICIPAL SAN JUAN DE DIOS:</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div>
+ <h2>El primer hospital de Atlixco:</h2>
+ <p>De finales del s. XVI, se considera el primer hospital de Atlixco. El edificio estaba destinado a atender a la población y viajeros en la Villa de Carrión de las epidemias ocurridas a finales del siglo XVI. Un clérigo desarrolla un hospital con botica, dedicado a la Purísima Concepción de María, patrona de los enfermos, en la Plazuela del Santo Nombre de Jesús.</p>
+ <p>Actualmente, este inmueble permanece con el mismo fin para el cual fue creado hace poco más de dos siglos, aun cuando se aprecian algunas separaciones y divisiones en su conjunto. Destaca en el edificio una colección de importantes pinturas que artistas poblanos reconocidos pintaron, entre ellos cabe mencionar a Luis Berrueco. Estas pinturas representan entre otros temas, diferentes pasajes de la vida de San Juan de Dios.</p>
+ <p>Uno de los pocos hospitales de la época de la colonia que sigue conservando su uso original, así como una fuente de piedra que representa a San Adrián luchando con un león.</p>
+ <p>En la Pinacoteca podrás apreciar la colección de la vida de San Juan de Dios, fundador de la orden de los “Juaninos” quienes se encargaban de los hospitales en la Nueva España. El acceso a la pinacoteca municipal se solicita previa cita en las oficinas de turismo.
+A un lado del hospital se encuentra la iglesia dedicada a San Rafael Arcángel, a quienes los juaninos se encomendaban.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hospital','','imagenes/hospital2.jpg',1)"><img src="imagenes/hospital.jpg" width="396" height="363" id="hospital"></a>
+<div data-role="main" class="ui-content"></div>
+ </div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+ 
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TEMPLO DE LA MERCED:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Historia:</h2>
+<p>Los Mercedarios en 1612 fundan este convento dedicado a la Visitación de Nuestra Señora de la Merced. La fachada es un muro almenado con dos grandes portadas coronadas por un nicho, un magnífico ejemplo del barroco de principios del s. XVIII.</p>
+<p>El interior de la iglesia es de una sola nave de gran altura con crucero y cúpula. En la Iglesia se conservan interesantes pinturas. Accediendo al convento se encuentra un claustro sencillo con fuente y una interesante puerta de piedra con arco de medio punto decorada con flores y aves.</p>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Templo:</h2>
+<div>
+</div>
+<img src="imagenes/templo_merced.jpg" width="387" height="364" alt="templo"> </div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>EX CONVENTO SAN FRANCISCO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>Ex convento Franciscano</h2>
+<p>El ex-convento franciscano de Santa María de Jesús se ubica en el cerro de San Miguel, lugar ceremonial donde se celebra el Huey Atlixcayotl. Data del siglo XVI. Construido en dos periodos, el primero abarca de 1538 a 1550, el segundo de 1560 a 1620. Perteneció a los franciscanos, dedicado a evangelizar a los indígenas de la región.</p>
+<p>El conjunto arquitectónico lo forman un gran atrio, el templo y el convento. Tiene una puerta atrial con dos arcos y en la fachada los nichos del vía crucis. A mediados del siglo XIX fueron colocados en el templo parte de los bienes muebles de la iglesia del Carmen destacando entre ellos el retablo mayor que es considerado como uno de los más bellos que se ejecutaron en la Nueva España durante el siglo XVII.</p>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>VISTA PANORAMICA</h2>
+<div>
+</div>
+<img src="imagenes/ex_convento.jpg" width="247" height="281" alt="SF"> </div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CALLE DE LAS FLORES:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Sobre la Avenida Hidalgo se encuentra esta emblemática calle denominada la Calle de las Flores, donde podrás apreciar sus renovadas fachadas adornadas con flores del municipio.
+Durante el recorrido podrás apreciar las casonas que fueron reconstruidas, hasta llegar a la Escalera Ancha lugar donde se realizaba el Huey Atlixcáyotl y ahora tras su remodelación encontrarás un reloj gigante hecho a base de flores.</p>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Avenida Hidalgo</h2>
+<div>
+</div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('avenida','','imagenes/Calle_flores.jpg',1)"><img src="imagenes/avenida.jpg" width="266" height="315" id="avenida"></a></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>IGLESIA DE SAN FELIX PAPA:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2></h2>
+<p>En el Siglo XVI, uno de los grandes acontecimientos que hubo en Atlixco, fue la elección que hicieron del Santo Patrono de la ciudad, esto sucedió el 30 de octubre de 1580.</p>
+<p>Otra de las Iglesias beneficiadas por la Asociación “Adopte una Obra de Arte” es la dedicada al Patrono de la ciudad, cuyos lienzos datan del siglo XVII y resguarda una colección donde los apóstoles se encuentran vestidos de papas; la imagen del Santo Patrono de la ciudad próximamente será rehabilitada.</p>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Iglesia:</h2>
+<div>
+</div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('san_felix','','imagenes/iglesia.jpg',1)"><img src="imagenes/iglesia_SF.jpg" width="326" height="237" id="san_felix"></a> </div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>DISEÑADOR:</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>DISEÑA APLICACIONES WEB Y MOVILES:</h2>
+<h2>Diseña Aplicaciones Móviles:</h2>
+<p>4 Grupo H</p>
+<p>Viridiana Cortéz Díaz</p>
+<p>Profr.Lic Jose Antonio Gómez Hernandez</p>
+<p>Aplicacion 10</p>
+<P>Guía turistica</P>
+
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>FOTO DEL DISEÑADOR</h2>
+<div>
+</div>
+<p><img src="imagenes/perfil.jpg" width="306" height="323" alt="perfil"></p>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Guía Turística VCD</h4>
+</div>
+</div>
+
+
+</body>
+</html>
